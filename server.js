@@ -1,6 +1,6 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
-const burger = require(`./models/burger`);
+
 const burgers_controllers = require(`./controllers/burgers_controller`);
 
 const app = express();
