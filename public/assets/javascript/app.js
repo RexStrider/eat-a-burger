@@ -7,9 +7,7 @@ $.ajax({
     for (i in res) {
         let el=res[i];
         
-        // creates the row that displays the burger's information
         const row = document.createElement("section");
-        
 
         const col = document.createElement("section");
         col.setAttribute("class", "col");
@@ -23,7 +21,6 @@ $.ajax({
         col.append(h2, img);
 
         const button = document.createElement("button");
-        // button.setAttribute("class", "update");
         button.setAttribute("key", el.id);
 
         if (el.devoured) {
@@ -34,12 +31,10 @@ $.ajax({
         else {
             button.addEventListener("click", function(){
                 const id = this.getAttribute("key");
-                // console.log(id);
                 $.ajax({
                     url: `/api/update/${id}`,
                     method: 'PUT'
                 }).then(res => {
-                    // console.log(res);
                     window.location.reload(false);
                 });
             })
@@ -68,18 +63,4 @@ $('.create').on('click', event => {
         // console.log(res);
         window.location.reload(false);
     });
-});
-
-$('.update').on('click', function(event) {
-    console.log(this);
-
-    // const id = this.getAttribute("key");
-
-    // $.ajax({
-    //     url: `/api/update/${id}`,
-    //     method: 'PUT'
-    // }).then(res => {
-    //     // console.log(res);
-    //     window.location.reload(false);
-    // });
 });
