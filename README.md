@@ -22,7 +22,7 @@ If you don't know how to do this, now is a great time to learn!
 
 It might take some time and patience, but it's worth knowing.
 
-Just do some searching, I gaurantee that stack exchange has well documented answers for Windows, Mac, and Linux.
+Just do some searching, I stack exchange should have some well documented answers for setting up your PATH environment variables in Windows, Mac, and Linux.
 
 For this application, you will need to install [Node JS](https://nodejs.org/en/download/), [MySQL](https://www.mysql.com/downloads/), and [Git](https://git-scm.com/downloads).
 
